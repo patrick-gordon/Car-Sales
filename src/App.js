@@ -4,6 +4,10 @@ import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
+import {createStore } from 'redux';
+import { reducer } from './reducers/index'
+
+const store = createStore(reducer)
 
 const App = () => {
   const state = {
